@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FindViewExam02">
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/beach" />
+
+    <Button
+        android:id="@+id/imgButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dream1"
+        />
+
+    <Button
+        android:id="@+id/imgButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dream2"
+        />
+
+    <Button
+        android:id="@+id/imgButton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="beach"
+        />
+
+    <Button
+        android:id="@+id/imgButton4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ic_launcher_background"
+        />
+
+    <Button
+        android:id="@+id/imgButton5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ic_launcher_background"
+        />
+
+
+
+
+</LinearLayout>
