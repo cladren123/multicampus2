@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FrameLayout_exam01">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <Button
+            android:id="@+id/layout_exam01_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="myclick"
+            android:text="@string/menu1" />
+
+        <Button
+            android:id="@+id/layout_exam01_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="myclick"
+            android:text="@string/menu2" />
+
+        <Button
+            android:id="@+id/layout_exam01_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="myclick"
+            android:text="@string/menu3" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_exam01_layout01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#4CAF50"
+            android:visibility="visible"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu1"
+                android:textSize="35sp" />
+
+            <EditText
+                android:id="@+id/layout_exam01_txt11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="ID"
+                />
+
+            <EditText
+                android:id="@+id/layout_exam01_txt12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                />
+
+            <Button
+                android:id="@+id/layout_exam01_btn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu1" />
+
+            <TextView
+                android:id="@+id/layout_exam01_txt13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/layout_exam01_txt14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_exam01_layout02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#90B16A"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="회원가입"
+                />
+
+            <EditText
+                android:id="@+id/layout_exam01_txt21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Name"
+                android:inputType="textPersonName"
+                />
+
+            <EditText
+                android:id="@+id/layout_exam01_txt22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="id"
+                android:inputType="textPersonName"
+                />
+
+            <EditText
+                android:id="@+id/layout_exam01_txt23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:inputType="textPersonName"
+                android:hint="pass"
+                />
+
+            <Button
+                android:id="@+id/layout_exam01_btn5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="myclick"
+                android:text="@string/test"/>
+
+            <TextView
+                android:id="@+id/layout_exam01_txt24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="입력내용:"
+
+                />
+
+<!--            <TextView-->
+<!--                android:id="@+id/layout_exam01_txt25"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/layout_exam01_txt26"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_exam01_layout03"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#DBECC8"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원정보"
+                android:textSize="35sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/img01"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="장기용" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

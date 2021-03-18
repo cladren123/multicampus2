@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+    뷰의 영역이 커서 한눈에 보이지 않을 때 사용
+    기본이 수직
+    scrollView의 하위로 올 수 있는 위젯은 한 개
+    scrollView의 fillViewport 속성을 "true"로 설정하면
+    scrollView의 하위 View는 scrollView의 사이즈만큼 늘어난다.
+     -> 하위 View가 scrollView 보다 작을 경우
+
+
+-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="#B63131"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="#FFEB3B"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="#713DCF"/>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
